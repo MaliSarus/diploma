@@ -1,0 +1,53 @@
+@media screen and (min-width: 1024px) {
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .about{
+    .row{
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+    background: url("../img/about/photo-lg.png") bottom right no-repeat;
+    height: 768px;
+    &__image{
+      display: none;
+    }
+    &__text{
+      flex-basis: 80%;
+      height: 637px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      .btn_orange{
+        max-width: 320px;
+      }
+
+    }
+    &__name{
+      text-align: left;
+      font-size: 80px;
+      margin-bottom: 23px;
+    }
+    &__desc{
+      text-align: left;
+      font-size: 25px;
+      margin-bottom: 45px;
+    }
+  }
+  .about-price{
+    background: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+    &__block{
+      h2{
+        font-size: 45px;
+        line-height: 60px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
