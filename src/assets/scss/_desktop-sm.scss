@@ -1,0 +1,8 @@
+@media screen and (min-width: 575px)  {
+  .about{
+    &__image{
+      background: url("../img/about/photo-lg.png") bottom right no-repeat;
+      background-size: contain;
+    }
+  }
+}
