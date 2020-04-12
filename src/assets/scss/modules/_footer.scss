@@ -1,4 +1,9 @@
 .footer {
+  position: relative;
+  padding-bottom: 56px;
+  @media screen and (min-width: $lg-width){
+    padding-bottom: 88px;
+  }
   &__top {
     padding: 50px 0;
     @media screen and (min-width: $md-width) {
@@ -7,6 +12,26 @@
     }
     @media screen and (min-width: $xl-width) {
       padding-top: 77px;
+    }
+  }
+  &__bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    color: white;
+    background: #31293c;
+    text-align: center;
+    @media screen and (min-width: $lg-width){
+      padding: 32px 0;
+    }
+    p{
+      font-size: 12px;
+      @media screen and (min-width: $lg-width){
+        font-size: 16px;
+      }
     }
   }
 
@@ -47,6 +72,12 @@
       font-weight: 500;
       color: #8993ad;
       background-image: linear-gradient(to top, #f26522, #fa0891);
+      text-decoration: none;
+      transition: color .25s;
+      &:hover{
+        text-decoration: none;
+        color: #fc557c;
+      }
       @media screen and (min-width: $lg-width){
         font-size: 25px;
         color: black;

@@ -39,6 +39,10 @@
       font-weight: bold;
       text-decoration: none;
       margin: 0 auto;
+      transition: color .25s;
+      &:hover{
+        color: #fc557c;
+      }
       @media screen and (min-width: $sm-width) {
         font-size: 25px;
       }

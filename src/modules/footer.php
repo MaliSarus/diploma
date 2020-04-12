@@ -25,15 +25,19 @@
                 <div class="footer__social">
                     <button class="button button_red footer__social-button">Заказать звонок</button>
                     <div class="footer__social-icons">
-                        <div class="footer__icon"></div>
-                        <div class="footer__icon"></div>
-                        <div class="footer__icon"></div>
-                        <div class="footer__icon"></div>
+                        <a href="#" class="footer__icon"></a>
+                        <a href="#" class="footer__icon"></a>
+                        <a href="#" class="footer__icon"></a>
+                        <a href="#" class="footer__icon"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row footer__bottom"></div>
+        <div class="row footer__bottom">
+            <div class="col-12">
+                <p>&copy;&nbsp;Дмитрий Алексеев, 2016 – 2018</p>
+            </div>
+        </div>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
