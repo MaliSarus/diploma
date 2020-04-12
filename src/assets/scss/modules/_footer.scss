@@ -52,6 +52,9 @@
     &_link {
       transition: color .25s;
       font-size: 15px;
+      @media screen and (min-width: $lg-width){
+        font-size: 18px;
+      }
 
       &:hover {
         text-decoration: none;
