@@ -20,9 +20,7 @@ function gulpSass() {
 
 function startServer(done) {
     browserSync.init({
-        server: {
-            baseDir: "./src/"
-        },
+        proxy: "diploma"
     });
     done();
 }
@@ -43,7 +41,7 @@ function reload(done) {
 function watchFiles(done) {
     gulp.watch('./src/assets/scss/**/*.scss', gulp.parallel(gulpSass));
     gulp.watch('./src/assets/css/**/*.css', gulp.parallel(reload));
-    gulp.watch("./src/**/*.html", gulp.parallel(reload));
+    gulp.watch("./src/**/*.php", gulp.parallel(reload));
     gulp.watch('./src/assets/js/**/*.js', gulp.parallel(reload));
     done();
 }

@@ -1,0 +1,123 @@
+.footer {
+  &__top {
+    padding: 50px 0;
+    @media screen and (min-width: $md-width) {
+      padding-top: 100px;
+      padding-bottom: 90px;
+    }
+    @media screen and (min-width: $xl-width) {
+      padding-top: 77px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 48px;
+
+    &_item {
+      margin-bottom: 18px;
+      @media screen and (min-width: $lg-width){
+        font-size: 16px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_link {
+      transition: color .25s;
+      font-size: 15px;
+
+      &:hover {
+        text-decoration: none;
+        color: #fc557c;
+      }
+      @media screen and (min-width: $lg-width){
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 25px;
+
+    &-item {
+      display: flex;
+      font-size: 20px;
+      font-weight: 500;
+      color: #8993ad;
+      background-image: linear-gradient(to top, #f26522, #fa0891);
+      @media screen and (min-width: $lg-width){
+        font-size: 25px;
+        color: black;
+      }
+
+      span {
+        display: block;
+        flex-grow: 1;
+        background: white;
+      }
+
+      i {
+        display: block;
+        color: black;
+        background: white; /* Белый цвет фона */
+        mix-blend-mode: screen; /* Режим наложения */
+        padding-top: 6px;
+        padding-right: 20px;
+        font-size: 14px;
+        @media screen and (min-width: $lg-width){
+          font-size: 20px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+
+  &__social {
+    &-button{
+      margin-bottom: 50px;
+      @media screen and (min-width: $lg-width){
+        border: solid 1px #f82370;
+        background-color: unset;
+        color: #f82370;
+        padding: {
+          top: 13px;
+          bottom: 11px;
+        }
+        &:hover{
+          color: white;
+          background-color: #f82370;
+        }
+      }
+    }
+    &-icons {
+      margin-top: 20px;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/footer/icons.png);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+
+    &:nth-child(1) {
+      background-position: -228px -228px;
+    }
+
+    &:nth-child(2) {
+      background-position: -17px -17px;
+    }
+
+    &:nth-child(3) {
+      background-position: -157px -162px;
+    }
+
+    &:nth-child(4) {
+      background-position: -17px -91px;
+    }
+  }
+}

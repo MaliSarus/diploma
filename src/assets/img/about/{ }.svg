@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="26">
+    <defs>
+        <linearGradient id="prefix__a" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#F26522"/>
+            <stop offset="18%" stop-color="#F6375A"/>
+            <stop offset="99%" stop-color="#FA0891"/>
+        </linearGradient>
+    </defs>
+    <text fill="url(#prefix__a)" font-family="Roboto" font-size="60" font-weight="bold" transform="matrix(.3674 .19059 -.19059 .3674 .11 14.983)">
+        { }
+    </text>
+</svg>

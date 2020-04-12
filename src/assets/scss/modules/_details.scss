@@ -1,0 +1,105 @@
+.details{
+  position: relative;
+  padding: 50px 0;
+  background-image: linear-gradient(to top, #ff8f5a, #ff2f96);
+  @media screen and (min-width: $md-width){
+    padding: 86px 0;
+  }
+  .float-text{
+    display: none;
+    @media screen and (min-width: $md-width){
+      display: block;
+    }
+    &[data-number='1']{
+      @media screen and (min-width: $md-width){
+        left: 157px;
+        top: 24px;
+        transform: rotate(15deg);
+      }
+      @media screen and (min-width: $xl-width){
+        left: 128px;
+        top: 65px;
+      }
+    }
+    &[data-number='2']{
+      @media screen and (min-width: $md-width){
+        font-size: 37.5px;
+        right: 96px;
+        bottom: 36px;
+        transform: rotate(-20deg);
+      }
+      @media screen and (min-width: $xl-width){
+        bottom: unset;
+        top: 81px;
+        right: 208px;
+        transform: rotate(-30deg);
+      }
+    }
+    &[data-number='3']{
+      @media screen and (min-width: $md-width){
+        font-size: 28.5px;
+        right: 456px;
+        bottom: 33px;
+        transform: rotate(25deg);;
+      }
+      @media screen and (min-width: $xl-width){
+        right: 412px;
+        bottom: 20px;
+        transform: rotate(30deg);
+      }
+    }
+    &[data-number='4']{
+      @media screen and (min-width: $md-width){
+        display: none;
+      }
+      @media screen and (min-width: $xl-width){
+        display: block;
+        left: 246px;
+        bottom: 62px;
+        transform: rotate(15deg);
+      }
+    }
+    &[data-number='5']{
+      @media screen and (min-width: $md-width){
+        display: none;
+      }
+      @media screen and (min-width: $xl-width){
+        display: block;
+        right: 110px;
+        bottom: 50px;
+        transform: rotate(-15deg);
+      }
+    }
+  }
+
+  &__block{
+    width: 100%;
+    color: white;
+    h3{
+      font-size: 28px;
+      line-height: 1.43;
+      margin-bottom: 47px;
+      transition: font-size .25s;
+      @media screen and (min-width: $md-width){
+        font-size: 45px;
+        line-height: 1.33;
+        margin-bottom: 40px;
+      }
+    }
+    p{
+      font-size: 15px;
+      line-height: 2;
+      display: flex;
+      transition: font-size .25s;
+      &::before{
+        display: block;
+        content: '*';
+        margin-right: 3px;
+      }
+      @media screen and (min-width: $md-width){
+        font-size: 18px;
+        line-height: 1.67;
+      }
+    }
+  }
+}

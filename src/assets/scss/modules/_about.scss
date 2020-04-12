@@ -1,0 +1,177 @@
+.about {
+  @media screen and (min-width: $md-width) {
+    padding-top: 321px;
+    padding-bottom: 229px;
+    position: relative;
+  }
+  .float-text{
+    &[data-number='1']{
+      left: 49px;
+      top: 94px;
+      transform: rotate(15deg);
+      @media screen and (min-width: $md-width){
+        left: 77px;
+        top: 159px;
+      }
+      @media screen and (min-width: $xl-width){
+        left: 128px;
+        top: 138px;
+      }
+    }
+    &[data-number='2']{
+      right: 122px;
+      top: 92px;
+      transform: rotate(-25deg);
+      @media screen and (min-width: $md-width){
+        right: unset;
+        left: 425px;
+        top: 241px;
+        transform: rotate(10deg);
+      }
+      @media screen and (min-width: $xl-width){
+        top: unset;
+        bottom: 187px;
+        left: 955px;
+        transform: rotate(30deg);
+      }
+    }
+    &[data-number='3']{
+      right: 39px;
+      top: 138px;
+      transform: rotate(15deg);
+      @media screen and (min-width: $md-width){
+        right: 68px;
+        top: 153px;
+        transform: rotate(-25deg);
+        font-size: 29px;
+      }
+      @media screen and (min-width: $xl-width){
+        left: 791px;
+        top: 170px;
+        right: unset;
+        transform: rotate(-15deg);
+      }
+    }
+    &[data-number='4']{
+      left: 37px;
+      top: 202px;
+      transform: rotate(15deg);
+      @media screen and (min-width: $md-width){
+        top: unset;
+        bottom: 87px;
+        left: 58px;
+        font-size: 55px;
+      }
+      @media screen and (min-width: $xl-width){
+        left: 248px;
+        top: 373px;
+        bottom: unset;
+      }
+    }
+    &[data-number='5']{
+      display: none;
+      @media screen and (min-width: $md-width){
+        display: block;
+        left: 361px;
+        bottom: 144px;
+        transform: rotate(-20deg);
+      }
+      @media screen and (min-width: $xl-width){
+        left: 379px;
+        bottom: 58px;
+      }
+    }
+  }
+
+  &__man-block {
+    position: relative;
+    overflow: hidden;
+    height: 460px;
+    width: 100%;
+    margin-bottom: 18px;
+    @media screen and (min-width: $md-width) {
+      height: 670px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    bottom: -88px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    transition: width .25s, height .25s, left .25s, right .25s, transform .25s;
+    @media screen and (min-width: $md-width) {
+      left: unset;
+      right: (547px - 919px);
+      bottom: (525px - 630px);
+      width: 919px;
+      height: 630px;
+      transform: unset;
+    }
+    @media screen and (min-width: $xl-width) {
+      left: calc(50% + 150px);
+      bottom: (630px - 764px);
+      width: 920px;
+      height: 764px;
+    }
+  }
+
+  &__man {
+    background-image: url('../img/about/man.png');
+    background-position: center;
+    background-size: auto 100%;
+    width: 224px;
+    height: 334px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: width .25s, height .25s, left .25s, right .25s, transform .25s;
+    @media screen and (min-width: $md-width) {
+      width: 435px;
+      height: 637px;
+      left: unset;
+      transform: unset;
+      right: 38px;
+      background-image: url('../img/about/man-lg.png');
+    }
+    @media screen and (min-width: $xl-width) {
+      width: 435px;
+      height: 637px;
+      background-image: url('../img/about/man-xl.png');
+      right: unset;
+      left: calc(50% + 203px);
+      filter: drop-shadow(2px 4px 43px rgba(0,0,0,.2));
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    margin-bottom: 25px;
+    @media screen and (min-width: $md-width) {
+      text-align: left;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 13px;
+    @media screen and (min-width: $md-width) {
+      font-size: 54.5px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: $md-width) {
+      font-size: 25px;
+    }
+  }
+}

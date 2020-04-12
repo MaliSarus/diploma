@@ -1,0 +1,57 @@
+.text{
+  color: $main-text-color-light;
+  line-height: 1.5;
+}
+
+.title{
+  font-weight: 900;
+  color: $main-text-color-dark;
+  text-align: center;
+  font-size: 30px;
+  transition: font-size .25s;
+  @media screen and (min-width: $md-width){
+    font-size: 54px;
+  }
+}
+.button{
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  @media screen and (min-width: $md-width){
+    max-width: 320px;
+  }
+  &_red{
+    background: #ff4e2e;
+    color: white;
+    transition: background-color .5s;
+    &:hover{
+      background: lighten(#ff4e2e, 10%);
+    }
+  }
+}
+
+.float-text{
+  position: absolute;
+  font-size: 44px;
+  font-weight: bold;
+  span{
+    color: white;
+    display: block;
+  }
+  &_gradient{
+    //background: linear-gradient(to top, #f26522, #fa0891), linear-gradient(to bottom, #6055c4, #6055c4);
+    background-image: linear-gradient(to top, #f26522, #fa0891), linear-gradient(to bottom, #6055c4, #6055c4);
+    color: #6055c4;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    transition: left .25s, right .25s, top .25s, bottom .25s, transform .25s;
+    @media screen and (min-width: $md-width){
+      font-size: 44px;
+    }
+
+  }
+}

@@ -1,0 +1,114 @@
+.portfolio {
+  padding: 50px 0;
+  @media screen and (min-width: $md-width) {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    @media screen and (min-width: $md-width) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__slider {
+    @media screen and (min-width: $xl-width) {
+      margin-bottom: 95px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      text-align: center;
+      transition: font-size .25s;
+      @media screen and (min-width: $lg-width) {
+        font-size: 25px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        margin-bottom: 18px;
+        @media screen and (min-width: $md-width) {
+          margin-bottom: 26px;
+        }
+        @media screen and (min-width: $xl-width) {
+          margin-bottom: 38px;
+        }
+      }
+    }
+  }
+
+  .swiper {
+    &-pagination {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin-top: 46px;
+      margin-bottom: 50px;
+      @media screen and (min-width: $lg-width) {
+        margin: 100px 0;
+      }
+      @media screen and (min-width: $xl-width) {
+        display: none;
+      }
+
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 7.5px !important;
+        transition: margin .25s, width .25s, height .25s;
+        @media screen and (min-width: $lg-width) {
+          width: 18px;
+          height: 18px;
+          margin: 0 15px !important;
+        }
+
+        &-active {
+          background-color: #ff4e2e;
+        }
+      }
+    }
+    &-button-next, &-button-prev{
+      display: none;
+      top: calc(50% - 95px - 38px);
+      width: 100px;
+      height: 100px;
+      background-image: url("../img/portfolio/arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: filter .3s, transform .25s;
+      outline: none;
+      &:hover{
+        filter: drop-shadow(0 0 5px rgba(black,.1));
+      }
+      &:active{
+        filter: drop-shadow(0 0 5px rgba(black,.1)) brightness(1.2);
+      }
+      &::after{
+        display: none;
+      }
+      @media screen and (min-width: $xl-width){
+        display: flex;
+      }
+    }
+    &-button-prev{
+      left: -50px;
+      margin: 0;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+    &-button-next{
+      right: -50px;
+      margin: 0;
+      transform: rotate(180deg);
+      &:hover{
+        transform: scale(1.2) rotate(180deg);
+      }
+    }
+  }
+}
