@@ -11,7 +11,7 @@
             </div>
             <div class="col-12 col-lg-5 p-0">
                 <div class="footer__contacts">
-                    <a href="tel:+7 (499) 995-77-55" class="footer__contacts-item">
+                    <a href="tel:+7(499)995-77-55" class="footer__contacts-item">
                         <i class="icon icon-phone"></i>
                         <span>+7 (499) 995-77-55</span>
                     </a>
