@@ -8,6 +8,14 @@ $(document).ready(function () {
         $(this).toggleClass('is-active').css({
             outline:'none'
         });
+        $('body').toggleClass(function () {
+            if (hamburger.is('.is-active')){
+                return 'overflow_hidden'
+            }
+            else{
+                return false;
+            }
+        });
     });
     if(isSet($('.portfolio'))){
         var mySwiper = new Swiper ('.portfolio__slider', {
