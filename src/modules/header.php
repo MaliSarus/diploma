@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css?ver=<?php echo  date("His")?>">
+    <link rel="stylesheet" href="./assets/css/style.min.css?ver=<?php echo  date("His")?>">
 
     <title>Дипломный проект</title>
 </head>
@@ -29,7 +28,7 @@
                     </ul>
                     <div class="header__contacts">
                         <a href="tel:+7(499)995-55-77">+7(499)995-55-77</a>
-                        <a class="header__call-button" href="tel:+7(499)995-55-77">
+                        <a class="header__call-button call-button" href="tel:+7(499)995-55-77">
                             <span class="header__call-button_text">Заказать звонок</span>
                             <img src="./assets/img/header/call-icon.png" alt="Иконка звонка">
                         </a>

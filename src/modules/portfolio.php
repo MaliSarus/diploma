@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col-12 p-0 d-flex justify-content-center">
-                <button class="button button_red">Узнать стоимость</button>
+                <button class="button button_red details-button">Узнать стоимость</button>
             </div>
         </div>
     </div>

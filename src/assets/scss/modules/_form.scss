@@ -1,0 +1,101 @@
+.modal-form {
+  z-index: 100;
+  position: fixed;
+  background: rgba(white, .6);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &_active {
+    display: flex;
+  }
+
+  &__block {
+    width: calc(100% - 40px);
+    @media screen and (min-width: $lg-width) {
+      width: 25vw;
+    }
+    box-sizing: border-box;
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #fa0891;
+    padding: 15px;
+
+
+    > form {
+      > * {
+        display: block;
+      }
+
+      button {
+        margin-top: 36px;
+        max-width: none;
+        width: 100%;
+        border: solid 1px #f82370;
+        background-color: unset;
+        color: #f82370;
+        padding: {
+          top: 13px;
+          bottom: 11px;
+        }
+        outline: none;
+
+        &:hover {
+          color: white;
+          background-color: #f82370;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          outline: none;
+        }
+      }
+    }
+
+    box-shadow: 0 0 50px rgba(black, .2);
+  }
+
+  &__input {
+    color: #f82370;
+    width: 100%;
+    padding: 5px;
+    background: rgba(#31293c, .05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: solid 1px #f82370;
+    margin-bottom: 10px;
+    transition: color .25s, background .25s;
+
+    &::placeholder {
+      color: #f82370;
+    }
+
+    &:focus {
+      outline: none;
+      color: white;
+      background-color: #f82370;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}
+
+.valid {
+  border-color: seagreen;
+  color: seagreen;
+
+  &:focus {
+    background: white;
+    color: seagreen;
+  }
+}

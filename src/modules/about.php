@@ -29,7 +29,7 @@
                             верстальщик
                         </div>
                     </div>
-                    <button class="button button_red">Узнать подробнее</button>
+                    <button class="button button_red details-button">Узнать подробнее</button>
                 </div>
             </div>
         </div>
