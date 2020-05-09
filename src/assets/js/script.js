@@ -94,20 +94,16 @@ $(document).ready(function () {
 
     callButton.on('click', function (event) {
         event.preventDefault();
-        modalForm.addClass('modal-form_active');
-        $('body').css({
-            overflow: 'hidden'
-        });
+        modalForm.removeClass('modal-form_unactive');
+        $('body').addClass('overflow_hidden');
         modalForm.find('[type="email"]').css({
             display: 'none'
         }).addClass('valid');
     });
     detailsButton.on('click', function (event) {
         event.preventDefault();
-        modalForm.addClass('modal-form_active');
-        $('body').css({
-            overflow: 'hidden'
-        });
+        modalForm.removeClass('modal-form_unactive');
+        $('body').addClass('overflow_hidden');
         const mailInput = modalForm.find('[type="email"]');
         const pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
         modalForm.find('[type="email"]').removeAttr('style').attr('required','required').removeClass('valid');
@@ -145,9 +141,19 @@ $(document).ready(function () {
 
     modalForm.on('click', function (event) {
         if (!($(this).children().is(event.target)) && $(this).children().has(event.target).length === 0) {
-            $(this).removeClass('modal-form_active');
-            $('body').removeAttr('style');
+            $(this).addClass('modal-form_unactive');
+            $('body').removeClass('overflow_hidden');
         }
     })
+
+    $('.header__nav-link').on('click',function (e) {
+        e.preventDefault();
+        const destination = $(this).attr('href');
+        hamburger.removeClass('is-active');
+        $('body').removeClass('overflow_hidden');
+        $('html,body').animate({
+            scrollTop: $(destination).position().top
+        }, 700);
+    });
 
 });

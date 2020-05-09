@@ -15,8 +15,12 @@
         <span>&lt;/&gt;</span>
     </div>
     <div class="about__man-block">
-        <img class="about__ellipse" src="./dist/assets/img/about/man-bg.svg" alt="Элипс">
-        <div class="about__man"></div>
+        <div class="about__ellipse" ></div>
+        <picture class="about__man">
+            <source srcset="./dist/assets/img/about/man-lg.png" media="screen and (min-width: 768px)">
+            <source srcset="./dist/assets/img/about/man.png">
+            <img src="./dist/assets/img/about/man-lg.png" alt="MAN">
+        </picture>
     </div>
     <div class="container-fluid container-md container">
         <div class="row">

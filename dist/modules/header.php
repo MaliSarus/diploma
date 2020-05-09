@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preload" href="./dist/assets/fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./dist/assets/css/style.min.css?ver=<?php echo  date("His")?>">
 
     <title>Дипломный проект</title>
@@ -22,9 +23,9 @@
                       </span>
                     </button>
                     <ul class="header__nav">
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Услуги</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Портфолио</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Стоимость</a></li>
+                        <li class="header__nav-item"><a href="#todos-id" class="header__nav-link">Услуги</a></li>
+                        <li class="header__nav-item"><a href="#portfolio-id" class="header__nav-link">Портфолио</a></li>
+                        <li class="header__nav-item"><a href="#details-id" class="header__nav-link">Стоимость</a></li>
                     </ul>
                     <div class="header__contacts">
                         <a href="tel:+7(499)995-55-77">+7(499)995-55-77</a>

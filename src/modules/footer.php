@@ -40,9 +40,9 @@
         </div>
     </div>
 </footer>
-<script src="./assets/js/jquery-3.4.1.min.js"></script>
-<script src="./assets/js/jquery.inputmask.min.js"></script>
-<script src="./assets/js/swiper.min.js"></script>
-<script src="./assets/js/script.min.js"></script>
+<script src="./src/assets/js/jquery-3.4.1.min.js"></script>
+<script src="./src/assets/js/jquery.inputmask.min.js"></script>
+<script src="./src/assets/js/swiper.min.js"></script>
+<script src="./src/assets/js/script.min.js"></script>
 </body>
 </html>

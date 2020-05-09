@@ -15,7 +15,7 @@
         <span>&lt;/&gt;</span>
     </div>
     <div class="about__man-block">
-        <img class="about__ellipse" src="./assets/img/about/man-bg.svg" alt="Элипс">
+        <div class="about__ellipse">
         <div class="about__man"></div>
     </div>
     <div class="container-fluid container-md container">

@@ -1,4 +1,4 @@
-<section class="details">
+<section class="details" id="details-id">
     <div class="float-text" data-number="1">
         <span>{&nbsp;}</span>
     </div>

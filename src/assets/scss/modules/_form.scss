@@ -1,19 +1,23 @@
 .modal-form {
   z-index: 100;
+  top: 0;
+  left: 0;
   position: fixed;
   background: rgba(white, .6);
   width: 100vw;
   height: 100vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  &_active {
-    display: flex;
+  &_unactive {
+    display: none;
   }
 
   &__block {
+    overflow: auto;
     width: calc(100% - 40px);
+    max-height: 100%;
     @media screen and (min-width: $lg-width) {
       width: 25vw;
     }

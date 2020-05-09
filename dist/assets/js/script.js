@@ -148,6 +148,16 @@ $(document).ready(function () {
             $(this).removeClass('modal-form_active');
             $('body').removeAttr('style');
         }
+    });
+
+    $('.header__nav-link').on('click',function (e) {
+        e.preventDefault();
+        const destination = $(this).attr('href');
+        hamburger.removeClass('is-active');
+        $('body').removeClass('overflow_hidden');
+        $('html,body').animate({
+            scrollTop: destination.position().top
+        }, 700);
     })
 
 });

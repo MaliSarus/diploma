@@ -99,6 +99,9 @@
   }
 
   &__ellipse {
+    width: 470px;
+    height: 391px;
+    background: url("../img/about/man-bg.svg") center / contain no-repeat;
     position: absolute;
     bottom: -88px;
     left: 50%;
@@ -122,31 +125,24 @@
   }
 
   &__man {
-    background-image: url('../img/about/man.png');
-    background-position: center;
-    background-size: auto 100%;
-    width: 224px;
-    height: 334px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
     transition: width .25s, height .25s, left .25s, right .25s, transform .25s;
     @media screen and (min-width: $md-width) {
-      width: 435px;
-      height: 637px;
       left: unset;
       transform: unset;
       right: 38px;
-      background-image: url('../img/about/man-lg.png');
     }
     @media screen and (min-width: $xl-width) {
-      width: 435px;
-      height: 637px;
-      background-image: url('../img/about/man-xl.png');
       right: unset;
       left: calc(50% + 203px);
       filter: drop-shadow(2px 4px 43px rgba(0,0,0,.2));
+    }
+    img{
+      object-position: center;
+      object-fit: contain;
     }
   }
 

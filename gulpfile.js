@@ -25,7 +25,7 @@ function gulpSass() {
 
 
 function minCss() {
-    return gulp.src(['src/assets/css/swiper.css', 'src/assets/css/style.css'])
+    return gulp.src(['src/assets/css/bootstrap-grid.min.css','src/assets/css/swiper.css', 'src/assets/css/style.css'])
         .pipe(concatCss("style.min.css"))
         .pipe(cleanCSS())
         .pipe(gulp.dest('dist/assets/css/'));
@@ -74,7 +74,7 @@ function watchFiles(done) {
     gulp.watch('./src/assets/scss/**/*.scss', gulp.parallel(gulpSass,reload));
     gulp.watch('./src/assets/css/**/style.css', gulp.parallel(minCss,reload));
     gulp.watch("./src/**/*.php", gulp.parallel(reload));
-    gulp.watch('./src/assets/js/**/script.js', gulp.parallel(gulpUglify,reload));
+    gulp.watch('./src/assets/js/script.js', gulp.parallel(gulpUglify,reload));
     done();
 }
 
